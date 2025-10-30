@@ -92,9 +92,9 @@ Upload the file to your website's root directory and verify it's accessible at `
 
 ## How-To Guides
 
-### Using jobs_url for Quick Implementation
+### Using jobsUrl for Quick Implementation
 
-If maintaining a complete list of individual jobs in your `jobs.json` file is too much overhead, you can use the `jobs_url` field to simply link to your careers page. This is the fastest way to adopt the specification.
+If maintaining a complete list of individual jobs in your `jobs.json` file is too much overhead, you can use the `jobsUrl` field to simply link to your careers page. This is the fastest way to adopt the specification.
 
 For more detailed examples and common patterns, see the [Examples page](examples.html).
 
@@ -110,7 +110,7 @@ The specification prioritizes simplicity for quick implementation, machine-reada
 
 ### Use Cases
 
-For Organizations: Increase job posting visibility across the web, maintain a single source of truth for open positions, enable integration with multiple job boards automatically, and provide transparent structured data. Start simple with just a `jobs_url` link and expand to individual listings later if desired.
+For Organizations: Increase job posting visibility across the web, maintain a single source of truth for open positions, enable integration with multiple job boards automatically, and provide transparent structured data. Start simple with just a `jobsUrl` link and expand to individual listings later if desired.
 
 For Job Seekers: Use tools to search directly across company websites, get consistent structured information about positions, access up-to-date job listings at their source, and build custom job search and alert systems.
 

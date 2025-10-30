@@ -7,9 +7,9 @@ keywords: "jobs.json examples, job posting examples, careers api examples, json 
 
 This page provides practical examples and common patterns for implementing the jobs.json specification.
 
-## Basic jobs_url Approach
+## Basic jobsUrl Approach
 
-If maintaining a complete list of individual jobs in your `jobs.json` file is too much overhead, you can use the `jobs_url` field to simply link to your careers page or job board. This approach is ideal when you already have a job board with up-to-date listings or want to adopt the specification without the overhead of maintaining individual job entries.
+If maintaining a complete list of individual jobs in your `jobs.json` file is too much overhead, you can use the `jobsUrl` field to simply link to your careers page or job board. This approach is ideal when you already have a job board with up-to-date listings or want to adopt the specification without the overhead of maintaining individual job entries.
 
 ```json
 {
@@ -17,7 +17,7 @@ If maintaining a complete list of individual jobs in your `jobs.json` file is to
   "company": {
     "name": "Your Company Name",
     "url": "https://yourcompany.com",
-    "jobs_url": "https://yourcompany.com/careers"
+    "jobsUrl": "https://yourcompany.com/careers"
   },
   "jobs": []
 }
@@ -25,7 +25,7 @@ If maintaining a complete list of individual jobs in your `jobs.json` file is to
 
 ## Hybrid Approach
 
-You can also use both approaches together - list some key positions individually while also providing a `jobs_url` for the complete listing:
+You can also use both approaches together - list some key positions individually while also providing a `jobsUrl` for the complete listing:
 
 ```json
 {
@@ -33,7 +33,7 @@ You can also use both approaches together - list some key positions individually
   "company": {
     "name": "Your Company Name",
     "url": "https://yourcompany.com",
-    "jobs_url": "https://yourcompany.com/careers"
+    "jobsUrl": "https://yourcompany.com/careers"
   },
   "jobs": [
     {
@@ -126,7 +126,7 @@ Here's a complete example with multiple jobs and various fields:
     "url": "https://techinnovations.example.com",
     "logo": "https://techinnovations.example.com/logo.png",
     "description": "Leading technology company focused on innovation",
-    "jobs_url": "https://techinnovations.example.com/careers"
+    "jobsUrl": "https://techinnovations.example.com/careers"
   },
   "jobs": [
     {
