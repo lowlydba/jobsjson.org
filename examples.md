@@ -184,6 +184,3 @@ Here's a complete example with multiple jobs and various fields:
 ```
 
 For more information, see the [main specification](/) or the [schema reference](schema.html).
-
-
-{% include footer.html %}

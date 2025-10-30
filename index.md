@@ -23,7 +23,7 @@ A standardized, [well-known file format][well-known] placed at a predictable loc
 - [Tutorial](#tutorial)
   - [Getting Started with jobs.json](#getting-started-with-jobsjson)
 - [How-To Guides](#how-to-guides)
-- [Examples](examples.html)
+  - [Using jobsUrl for Quick Implementation](#using-jobsurl-for-quick-implementation)
 - [Reference](#reference)
 - [Explanation](#explanation)
   - [Design Principles](#design-principles)
@@ -133,7 +133,5 @@ Report specification issues or ask questions on the [GitHub Repository](https://
 ## Contributing
 
 This specification is open source and welcomes community input. Visit the GitHub repository to propose changes or improvements.
-
-{% include footer.html %}
 
 [well-known]: https://tools.ietf.org/html/rfc5785

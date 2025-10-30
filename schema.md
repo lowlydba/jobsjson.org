@@ -131,5 +131,3 @@ Report specification issues or ask questions on the [GitHub Repository](https://
 ## Contributing
 
 This specification is open source and welcomes community input. Visit the GitHub repository to propose changes or improvements.
-
-{% include footer.html %}
