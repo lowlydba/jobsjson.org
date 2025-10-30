@@ -98,7 +98,7 @@ Upload the file to your website's root directory and verify it's accessible at `
 
 If maintaining a complete list of individual jobs in your `jobs.json` file is too much overhead, you can use the `jobs_url` field to simply link to your careers page or job board. This approach is ideal when you already have a job board with up-to-date listings or want to adopt the specification without the overhead of maintaining individual job entries.
 
-<details>
+<details markdown="1">
 <summary>Example: Basic jobs_url approach</summary>
 
 ```json
@@ -137,7 +137,7 @@ You can also use both approaches together - list some key positions individually
 
 ### Common Patterns
 
-<details>
+<details markdown="1">
 <summary>Multiple Locations</summary>
 
 Specify multiple locations for a single position:
@@ -164,7 +164,7 @@ Specify multiple locations for a single position:
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>Employment Type</summary>
 
 Specify full-time, part-time, contract, or other employment types:
@@ -180,7 +180,7 @@ Specify full-time, part-time, contract, or other employment types:
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>Salary Information</summary>
 
 Include transparent salary information:
@@ -200,7 +200,7 @@ Include transparent salary information:
 
 </details>
 
-<details>
+<details markdown="1">
 <summary>Expiration Dates</summary>
 
 Add expiration dates to job listings:
