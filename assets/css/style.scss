@@ -6,7 +6,7 @@
 // Custom footer width adjustments
 .site-footer {
   .footer-col-wrapper {
-    @media screen and (min-width: $on-large) {
+    @media screen and (min-width: $on-laptop) {
       .footer-col-1 {
         width: calc(50% - (#{$spacing-unit} / 2));
       }
