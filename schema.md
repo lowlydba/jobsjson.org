@@ -1,6 +1,8 @@
 ---
 layout: default
-title: Schema Reference
+title: "jobs.json Schema Reference"
+description: "Complete schema reference for the jobs.json specification including field definitions, data types, and requirements."
+keywords: "jobs.json schema, json schema, job posting format, api reference"
 ---
 
 The `jobs.json` file must be a valid JSON document conforming to the following schema:

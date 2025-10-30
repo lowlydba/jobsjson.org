@@ -1,12 +1,36 @@
 # Site settings
-title: "jobsjson.org"
-description: "A specification for a standardized jobs.json file to describe open positions"
+title: "jobs.json - Standardized Job Posting Format"
+description: "A machine-readable specification for publishing open job positions. Make your careers page discoverable with a simple jobs.json file at your domain root."
 url: "https://jobsjson.org"
 baseurl: ""
+
+# SEO settings
+author: "jobs.json Contributors"
+twitter:
+  username: lowlydba
+  card: summary_large_image
+logo: /favicon.svg
+social:
+  name: jobs.json
+  links:
+    - https://github.com/lowlydba/jobsjson.org
+
+# Additional SEO metadata
+tagline: "A well-known file format for machine-readable job postings"
+keywords: "jobs.json, job postings, careers api, machine-readable jobs, job specification, standardized job format, careers page, job aggregator, job listings"
+
+# Open Graph defaults
+og_image: /favicon.svg
 
 # Build settings
 markdown: kramdown
 theme: minima
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
 
 # Kramdown settings for GitHub Flavored Markdown
 kramdown:

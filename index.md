@@ -1,6 +1,9 @@
 ---
 layout: default
-title: Home
+title: "jobs.json Specification - Machine-Readable Job Postings"
+description: "A standardized format for organizations to publish open job positions in a machine-readable jobs.json file. Tutorial, examples, and complete reference documentation."
+keywords: "jobs.json, job postings, careers api, job specification, machine-readable jobs, standardized job format"
+og_image: /favicon.svg
 ---
 
 A specification for a standardized `jobs.json` file to describe open positions at an organization.
