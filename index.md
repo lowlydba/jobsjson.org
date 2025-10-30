@@ -98,10 +98,10 @@ Upload the file to your website's root directory and verify it's accessible at `
 
 If maintaining a complete list of individual jobs in your `jobs.json` file is too much overhead, you can use the `jobs_url` field to simply link to your careers page or job board. This approach is ideal when you already have a job board with up-to-date listings or want to adopt the specification without the overhead of maintaining individual job entries.
 
-<details markdown="1">
+<details>
 <summary>Example: Basic jobs_url approach</summary>
 
-```json
+{% highlight json %}
 {
   "version": "0.1",
   "company": {
@@ -111,7 +111,7 @@ If maintaining a complete list of individual jobs in your `jobs.json` file is to
   },
   "jobs": []
 }
-```
+{% endhighlight %}
 
 </details>
 
@@ -137,12 +137,12 @@ You can also use both approaches together - list some key positions individually
 
 ### Common Patterns
 
-<details markdown="1">
+<details>
 <summary>Multiple Locations</summary>
 
 Specify multiple locations for a single position:
 
-```json
+{% highlight json %}
 {
   "id": "job-002",
   "title": "Product Manager",
@@ -160,32 +160,32 @@ Specify multiple locations for a single position:
     }
   ]
 }
-```
+{% endhighlight %}
 
 </details>
 
-<details markdown="1">
+<details>
 <summary>Employment Type</summary>
 
 Specify full-time, part-time, contract, or other employment types:
 
-```json
+{% highlight json %}
 {
   "id": "job-003",
   "title": "Marketing Specialist",
   "employmentType": "FULL_TIME",
   "otherEmploymentTypes": ["PART_TIME", "CONTRACT", "TEMPORARY", "INTERN"]
 }
-```
+{% endhighlight %}
 
 </details>
 
-<details markdown="1">
+<details>
 <summary>Salary Information</summary>
 
 Include transparent salary information:
 
-```json
+{% highlight json %}
 {
   "id": "job-004",
   "title": "Senior Developer",
@@ -196,23 +196,23 @@ Include transparent salary information:
     "period": "YEARLY"
   }
 }
-```
+{% endhighlight %}
 
 </details>
 
-<details markdown="1">
+<details>
 <summary>Expiration Dates</summary>
 
 Add expiration dates to job listings:
 
-```json
+{% highlight json %}
 {
   "id": "job-005",
   "title": "Data Analyst",
   "postedDate": "2025-01-15",
   "expiresDate": "2025-03-15"
 }
-```
+{% endhighlight %}
 
 </details>
 
