@@ -11,6 +11,7 @@ theme: minima
 # Include static files
 include:
   - humans.txt
+  - favicon.svg
 
 # Exclude from processing
 exclude:
