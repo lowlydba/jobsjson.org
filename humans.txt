@@ -1,0 +1,13 @@
+/* TEAM */
+    Developer: John McCall
+    Site: https://lowlydba.com
+    Location: United States
+
+/* SITE */
+    Last update: 2025/10/30
+    Standards: HTML5, CSS3
+    Components: Jekyll, GitHub Pages
+    Software: Jekyll, Markdown
+    
+/* THANKS */
+    To the open source community

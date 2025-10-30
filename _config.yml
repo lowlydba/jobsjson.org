@@ -8,6 +8,10 @@ baseurl: ""
 markdown: kramdown
 theme: minima
 
+# Include static files
+include:
+  - humans.txt
+
 # Exclude from processing
 exclude:
   - Gemfile
