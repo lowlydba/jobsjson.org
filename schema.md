@@ -1,6 +1,6 @@
 ---
 layout: default
-title: jobs.json Schema Reference
+title: Schema Reference
 ---
 
 > **Prototype Status**: This is a prototype specification (version 0.1) and may change based on community feedback and real-world implementation experience.

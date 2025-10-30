@@ -8,6 +8,12 @@ baseurl: ""
 markdown: kramdown
 theme: minima
 
+# Kramdown settings for GitHub Flavored Markdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
 # Include static files
 include:
   - humans.txt
