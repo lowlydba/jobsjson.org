@@ -79,6 +79,47 @@ Upload the file to your website's root directory and verify it's accessible at `
 
 ## How-To Guides
 
+### How to Use jobs_url for a Lower-Lift Approach
+
+If maintaining a complete list of individual jobs in your `jobs.json` file is too much overhead, you can use the `jobs_url` field to simply link to your careers page or job board:
+
+```json
+{
+  "version": "1.0",
+  "company": {
+    "name": "Your Company Name",
+    "url": "https://yourcompany.com",
+    "jobs_url": "https://yourcompany.com/careers"
+  },
+  "jobs": []
+}
+```
+
+This approach is ideal when:
+- You already have a job board or careers page with up-to-date listings
+- You want to adopt the specification without the overhead of maintaining individual job entries
+- You want to direct job seekers to your main careers portal
+
+You can also use both approaches together - list some key positions individually while also providing a `jobs_url` for the complete listing:
+
+```json
+{
+  "version": "1.0",
+  "company": {
+    "name": "Your Company Name",
+    "url": "https://yourcompany.com",
+    "jobs_url": "https://yourcompany.com/careers"
+  },
+  "jobs": [
+    {
+      "id": "featured-001",
+      "title": "Senior Software Engineer (Featured)",
+      "url": "https://yourcompany.com/careers/senior-software-engineer"
+    }
+  ]
+}
+```
+
 ### How to Add Multiple Locations
 
 To specify multiple locations for a single position:
@@ -171,6 +212,7 @@ The `jobs.json` file must be a valid JSON document conforming to the following s
 | `url` | string | Yes | Company website URL |
 | `logo` | string | No | URL to company logo |
 | `description` | string | No | Brief company description |
+| `jobs_url` | string | No | URL to company's jobs page or careers site. Can be used instead of or alongside individual jobs listed in the `jobs` array |
 
 #### Job Object
 
@@ -217,7 +259,8 @@ The `jobs.json` file must be a valid JSON document conforming to the following s
     "name": "Example Corp",
     "url": "https://example.com",
     "logo": "https://example.com/logo.png",
-    "description": "A leading technology company"
+    "description": "A leading technology company",
+    "jobs_url": "https://example.com/careers"
   },
   "jobs": [
     {
@@ -283,6 +326,7 @@ The `jobs.json` file must be a valid JSON document conforming to the following s
 - **Consistency**: All organizations use the same structure
 - **Simplicity**: Easy to implement and maintain
 - **Openness**: No proprietary platform lock-in
+- **Flexibility**: Choose between listing individual jobs or simply linking to your careers page with `jobs_url` for a lower-lift approach
 
 ### Design Principles
 
@@ -299,6 +343,7 @@ The `jobs.json` file must be a valid JSON document conforming to the following s
 - Maintain a single source of truth for open positions
 - Enable integration with multiple job boards automatically
 - Provide transparent, structured data about opportunities
+- Start simple with just a `jobs_url` link and expand to individual listings later if desired
 
 **For Job Seekers:**
 - Use tools to search directly across company websites
