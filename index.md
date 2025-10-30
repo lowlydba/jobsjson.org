@@ -5,7 +5,14 @@ title: A JSON Standard for Publishing Job Opportunities
 
 A specification for a standardized `jobs.json` file to describe open positions at an organization.
 
-- [Overview](#overview)
+## Overview<!-- omit in toc -->
+
+The `jobs.json` specification defines a well-known file format, similar to `robots.txt` or [`humans.txt`](https://humanstxt.org/), that organizations can use to publish their open job positions in a machine-readable format. By placing a `jobs.json` file at the root of your domain, you make it easy for job aggregators, career tools, and automated systems to discover and parse your available positions.
+
+<div style="padding: 1em; background-color: #d1ecf1; border-left: 4px solid #0c5460; color: #0c5460; margin: 1em 0;">
+  <strong>📝 Note:</strong> This is a prototype specification and may change based on community feedback and real-world implementation experience. We encourage early adopters to try it out and share their feedback.
+</div>
+
 - [Tutorial](#tutorial)
   - [Getting Started with jobs.json](#getting-started-with-jobsjson)
 - [How-To Guides](#how-to-guides)
@@ -21,14 +28,6 @@ A specification for a standardized `jobs.json` file to describe open positions a
   - [Future Considerations](#future-considerations)
 - [Getting Help](#getting-help)
 - [Contributing](#contributing)
-
-## Overview
-
-The `jobs.json` specification defines a well-known file format, similar to `robots.txt` or [`humans.txt`](https://humanstxt.org/), that organizations can use to publish their open job positions in a machine-readable format. By placing a `jobs.json` file at the root of your domain, you make it easy for job aggregators, career tools, and automated systems to discover and parse your available positions.
-
-<div style="padding: 1em; background-color: #d1ecf1; border-left: 4px solid #0c5460; color: #0c5460; margin: 1em 0;">
-  <strong>📝 Note:</strong> This is a prototype specification and may change based on community feedback and real-world implementation experience. We encourage early adopters to try it out and share their feedback.
-</div>
 
 ## Tutorial
 
@@ -86,7 +85,6 @@ Add a job entry to the `jobs` array:
 Step 4: Publish and verify
 
 Upload the file to your website's root directory and verify it's accessible at `https://yourcompany.com/jobs.json`.
-
 
 ## How-To Guides
 
