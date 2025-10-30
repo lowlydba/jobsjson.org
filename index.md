@@ -1,7 +1,24 @@
 ---
 layout: default
-title: jobs.json - A Standard for Publishing Job Opportunities
+title: A JSON Standard for Publishing Job Opportunities
 ---
+
+- [Overview](#overview)
+- [Tutorial](#tutorial)
+  - [Getting Started with jobs.json](#getting-started-with-jobsjson)
+- [How-To Guides](#how-to-guides)
+  - [How to Use jobs\_url for a Lower-Lift Approach](#how-to-use-jobs_url-for-a-lower-lift-approach)
+  - [Common Patterns](#common-patterns)
+- [Reference](#reference)
+- [Explanation](#explanation)
+  - [Why jobs.json?](#why-jobsjson)
+  - [Design Principles](#design-principles)
+  - [Documentation Style Guidelines](#documentation-style-guidelines)
+  - [Use Cases](#use-cases)
+  - [Relationship to Other Standards](#relationship-to-other-standards)
+  - [Future Considerations](#future-considerations)
+- [Getting Help](#getting-help)
+- [Contributing](#contributing)
 
 A specification for a standardized `jobs.json` file to describe open positions at an organization.
 
