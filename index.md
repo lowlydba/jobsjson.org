@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "jobs.json Specification - Machine-Readable Job Postings"
-description: "A standardized format for organizations to publish open job positions in a machine-readable jobs.json file. Tutorial, examples, and complete reference documentation."
-keywords: "jobs.json, job postings, careers api, job specification, machine-readable jobs, standardized job format"
+title: "jobs.json Specification - Human & Machine-Readable Job Postings"
+description: "A standardized format for organizations to publish open job positions in a human & machine-readable jobs.json file. Tutorial, examples, and complete reference documentation."
+keywords: "jobs.json, job postings, careers api, job specification, human-readable jobs, machine-readable jobs, standardized job format"
 og_image: /favicon.svg
 ---
 
@@ -20,12 +20,10 @@ A standardized, [well-known file format][well-known] placed at a predictable loc
   <strong>📝 Note:</strong> This is a prototype specification and may change based on community feedback and real-world implementation experience. We encourage early adopters to try it out and share their feedback.
 </div>
 
-
 - [Tutorial](#tutorial)
   - [Getting Started with jobs.json](#getting-started-with-jobsjson)
 - [How-To Guides](#how-to-guides)
-  - [How to Use jobs\_url for a Lower-Lift Approach](#how-to-use-jobs_url-for-a-lower-lift-approach)
-  - [Common Patterns](#common-patterns)
+- [Examples](examples.html)
 - [Reference](#reference)
 - [Explanation](#explanation)
   - [Design Principles](#design-principles)
@@ -94,127 +92,11 @@ Upload the file to your website's root directory and verify it's accessible at `
 
 ## How-To Guides
 
-### How to Use jobs_url for a Lower-Lift Approach
+### Using jobs_url for Quick Implementation
 
-If maintaining a complete list of individual jobs in your `jobs.json` file is too much overhead, you can use the `jobs_url` field to simply link to your careers page or job board. This approach is ideal when you already have a job board with up-to-date listings or want to adopt the specification without the overhead of maintaining individual job entries.
+If maintaining a complete list of individual jobs in your `jobs.json` file is too much overhead, you can use the `jobs_url` field to simply link to your careers page. This is the fastest way to adopt the specification.
 
-<details>
-<summary>Example: Basic jobs_url approach</summary>
-
-{% highlight json %}
-{
-  "version": "0.1",
-  "company": {
-    "name": "Your Company Name",
-    "url": "https://yourcompany.com",
-    "jobs_url": "https://yourcompany.com/careers"
-  },
-  "jobs": []
-}
-{% endhighlight %}
-
-</details>
-
-You can also use both approaches together - list some key positions individually while also providing a `jobs_url` for the complete listing:
-
-```json
-{
-  "version": "0.1",
-  "company": {
-    "name": "Your Company Name",
-    "url": "https://yourcompany.com",
-    "jobs_url": "https://yourcompany.com/careers"
-  },
-  "jobs": [
-    {
-      "id": "featured-001",
-      "title": "Senior Software Engineer (Featured)",
-      "url": "https://yourcompany.com/careers/senior-software-engineer"
-    }
-  ]
-}
-```
-
-### Common Patterns
-
-<details>
-<summary>Multiple Locations</summary>
-
-Specify multiple locations for a single position:
-
-{% highlight json %}
-{
-  "id": "job-002",
-  "title": "Product Manager",
-  "locations": [
-    {
-      "city": "New York",
-      "state": "NY",
-      "country": "USA",
-      "remote": false
-    },
-    {
-      "city": "London",
-      "country": "UK",
-      "remote": false
-    }
-  ]
-}
-{% endhighlight %}
-
-</details>
-
-<details>
-<summary>Employment Type</summary>
-
-Specify full-time, part-time, contract, or other employment types:
-
-{% highlight json %}
-{
-  "id": "job-003",
-  "title": "Marketing Specialist",
-  "employmentType": "FULL_TIME",
-  "otherEmploymentTypes": ["PART_TIME", "CONTRACT", "TEMPORARY", "INTERN"]
-}
-{% endhighlight %}
-
-</details>
-
-<details>
-<summary>Salary Information</summary>
-
-Include transparent salary information:
-
-{% highlight json %}
-{
-  "id": "job-004",
-  "title": "Senior Developer",
-  "compensation": {
-    "currency": "USD",
-    "min": 120000,
-    "max": 180000,
-    "period": "YEARLY"
-  }
-}
-{% endhighlight %}
-
-</details>
-
-<details>
-<summary>Expiration Dates</summary>
-
-Add expiration dates to job listings:
-
-{% highlight json %}
-{
-  "id": "job-005",
-  "title": "Data Analyst",
-  "postedDate": "2025-01-15",
-  "expiresDate": "2025-03-15"
-}
-{% endhighlight %}
-
-</details>
+For more detailed examples and common patterns, see the [Examples page](examples.html).
 
 ## Reference
 
@@ -225,7 +107,6 @@ For complete schema documentation including all field definitions, data types, a
 ### Design Principles
 
 The specification prioritizes simplicity for quick implementation, machine-readable structured data, human-readable JSON format, extensibility through optional fields, and follows the well-known file location pattern of `robots.txt` and `humans.txt`.
-
 
 ### Use Cases
 
@@ -244,8 +125,6 @@ Works as a lighter alternative to Schema.org's [JobPosting](https://schema.org/J
 ### Future Considerations
 
 The specification is designed to evolve while maintaining backward compatibility. Potential future additions may include skills requirements, benefits information, application process details, diversity data, and team structure information. Organizations can add custom fields prefixed with `x-` for experimental or proprietary data while maintaining spec compliance.
-
----
 
 ## Getting Help
 

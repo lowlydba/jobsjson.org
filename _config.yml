@@ -1,6 +1,6 @@
 # Site settings
-title: "jobs.json - Standardized Job Posting Format"
-description: "A machine-readable specification for publishing open job positions. Make your careers page discoverable with a simple jobs.json file at your domain root."
+title: "jobs.json"
+description: "A human & machine-readable specification for publishing open job positions. Make your careers page discoverable with a simple jobs.json file at your domain root."
 url: "https://jobsjson.org"
 baseurl: ""
 
