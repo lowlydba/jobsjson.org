@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "jobs.json Schema Reference"
+title: "Schema"
 description: "Complete schema reference for the jobs.json specification including field definitions, data types, and requirements."
 keywords: "jobs.json schema, json schema, job posting format, api reference"
 ---

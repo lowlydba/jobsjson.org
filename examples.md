@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "jobs.json Examples"
+title: "Examples"
 description: "Practical examples and common patterns for implementing the jobs.json specification in your organization."
 keywords: "jobs.json examples, job posting examples, careers api examples, json examples"
 ---
