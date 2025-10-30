@@ -5,12 +5,12 @@
 
   <div class="wrapper">
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
+    <div style="display: flex; flex-wrap: wrap; gap: 2rem;">
+      <div style="flex: 1; min-width: 300px;">
         <p>{{ site.description | escape }}</p>
       </div>
 
-      <div class="footer-col footer-col-2">
+      <div style="flex: 1; min-width: 300px;">
         <p>
           {% if site.spec_version %}Spec version: <strong>{{ site.spec_version }}</strong><br>{% endif %}
           Last built: <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: "%Y-%m-%d" }}</time><br>
