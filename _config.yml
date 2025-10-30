@@ -45,6 +45,7 @@ kramdown:
   hard_wrap: false
   syntax_highlighter: rouge
   parse_block_html: true
+  auto_ids: true
 
 # Include static files
 include:
