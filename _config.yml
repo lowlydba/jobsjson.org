@@ -35,7 +35,7 @@ plugins:
 # Kramdown settings for GitHub Flavored Markdown
 kramdown:
   input: GFM
-  hard_wrap: true
+  hard_wrap: false
   syntax_highlighter: rouge
   parse_block_html: true
 

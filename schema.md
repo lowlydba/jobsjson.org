@@ -132,4 +132,4 @@ Report specification issues or ask questions on the [GitHub Repository](https://
 
 This specification is open source and welcomes community input. Visit the GitHub repository to propose changes or improvements.
 
-{% include site-footer.html %}
+{% include footer.html %}
