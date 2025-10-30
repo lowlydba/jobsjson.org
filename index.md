@@ -1,6 +1,6 @@
 ---
 layout: default
-title: A JSON Standard for Publishing Job Opportunities
+title: Home
 ---
 
 A specification for a standardized `jobs.json` file to describe open positions at an organization.
