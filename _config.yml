@@ -5,7 +5,7 @@ url: "https://jobsjson.org"
 baseurl: ""
 
 # SEO settings
-author: "jobs.json Contributors"
+author: "John McCall"
 twitter:
   username: lowlydba
   card: summary_large_image
