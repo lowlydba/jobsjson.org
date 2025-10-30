@@ -7,7 +7,16 @@ keywords: "jobs.json examples, job posting examples, careers api examples, json 
 
 This page provides practical examples and common patterns for implementing the jobs.json specification.
 
-## Basic jobsUrl Approach
+- [Basic Approach](#basic-approach)
+- [Hybrid Approach](#hybrid-approach)
+- [Common Patterns](#common-patterns)
+  - [Multiple Locations](#multiple-locations)
+  - [Employment Type](#employment-type)
+  - [Salary Information](#salary-information)
+  - [Expiration Dates](#expiration-dates)
+- [Complete Example](#complete-example)
+
+## Basic Approach
 
 If maintaining a complete list of individual jobs in your `jobs.json` file is too much overhead, you can use the `jobsUrl` field to simply link to your careers page or job board. This approach is ideal when you already have a job board with up-to-date listings or want to adopt the specification without the overhead of maintaining individual job entries.
 
@@ -174,6 +183,7 @@ Here's a complete example with multiple jobs and various fields:
 }
 ```
 
----
-
 For more information, see the [main specification](/) or the [schema reference](schema.html).
+
+
+{% include footer.html %}
