@@ -38,56 +38,52 @@ A standardized, [well-known file format][well-known] placed at a predictable loc
 
 This tutorial will guide you through creating your first `jobs.json` file and publishing it on your website. You'll learn how to structure the file, where to place it, and how to validate your implementation.
 
-Step 1: Create the file
+1. Create the file:
 
-Create a file named `jobs.json` in the root directory of your website (e.g., `https://yourcompany.com/jobs.json`).
+   Create a file named `jobs.json` in the root directory of your website (e.g., `https://yourcompany.com/jobs.json`).
 
-Step 2: Add basic structure
+2. Add basic structure:
 
-Start with a minimal structure:
+   ```json
+   {
+     "version": "0.1",
+     "company": {
+       "name": "Your Company Name",
+       "url": "https://yourcompany.com"
+    },
+     "jobs": []
+   }
+   ```
 
-```json
-{
-  "version": "0.1",
-  "company": {
-    "name": "Your Company Name",
-    "url": "https://yourcompany.com"
-  },
-  "jobs": []
-}
-```
+3. Add your first job listing
 
-Step 3: Add your first job listing
+   ```json
+   {
+     "version": "0.1",
+     "company": {
+       "name": "Your Company Name",
+       "url": "https://yourcompany.com"
+     },
+     "jobs": [
+       {
+         "id": "job-001",
+         "title": "Software Engineer",
+         "department": "Engineering",
+          "location": {
+           "city": "San Francisco",
+           "state": "CA",
+           "country": "USA",
+           "remote": true
+         },
+         "url": "https://yourcompany.com/careers/software-engineer"
+       }
+     ]
+   }
+   ```
 
-Add a job entry to the `jobs` array:
+4. Publish and verify
 
-```json
-{
-  "version": "0.1",
-  "company": {
-    "name": "Your Company Name",
-    "url": "https://yourcompany.com"
-  },
-  "jobs": [
-    {
-      "id": "job-001",
-      "title": "Software Engineer",
-      "department": "Engineering",
-      "location": {
-        "city": "San Francisco",
-        "state": "CA",
-        "country": "USA",
-        "remote": true
-      },
-      "url": "https://yourcompany.com/careers/software-engineer"
-    }
-  ]
-}
-```
-
-Step 4: Publish and verify
-
-Upload the file to your website's root directory and verify it's accessible at `https://yourcompany.com/jobs.json`.
+   Upload the file to your website's root directory and verify it's accessible at `https://yourcompany.com/jobs.json`.
 
 ## How-To Guides
 
