@@ -26,7 +26,6 @@ A standardized, [well-known file format][well-known] placed at a predictable loc
   - [Using jobsUrl for Quick Implementation](#using-jobsurl-for-quick-implementation)
 - [Reference](#reference)
 - [Explanation](#explanation)
-  - [Design Principles](#design-principles)
   - [Use Cases](#use-cases)
   - [Relationship to Other Standards](#relationship-to-other-standards)
   - [Future Considerations](#future-considerations)
@@ -104,17 +103,13 @@ For complete schema documentation including all field definitions, data types, a
 
 ## Explanation
 
-### Design Principles
-
-The specification prioritizes simplicity for quick implementation, machine-readable structured data, human-readable JSON format, extensibility through optional fields, and follows the well-known file location pattern of `robots.txt` and `humans.txt`.
-
 ### Use Cases
 
-For Organizations: Increase job posting visibility across the web, maintain a single source of truth for open positions, enable integration with multiple job boards automatically, and provide transparent structured data. Start simple with just a `jobsUrl` link and expand to individual listings later if desired.
+- For Organizations: Increase job posting visibility across the web, maintain a single source of truth for open positions, enable integration with multiple job boards automatically, and provide transparent structured data. Start simple with just a `jobsUrl` link and expand to individual listings later if desired.
 
-For Job Seekers: Use tools to search directly across company websites, get consistent structured information about positions, access up-to-date job listings at their source, and build custom job search and alert systems.
+- For Job Seekers: Use tools to search directly across company websites, get consistent structured information about positions, access up-to-date job listings at their source, and build custom job search and alert systems.
 
-For Tool Builders: Create job aggregators without screen scraping, build career discovery and comparison tools, develop automated job alert systems, and enable resume matching and recommendation engines.
+- For Tool Builders: Create job aggregators without screen scraping, build career discovery and comparison tools, develop automated job alert systems, and enable resume matching and recommendation engines.
 
 ### Relationship to Other Standards
 

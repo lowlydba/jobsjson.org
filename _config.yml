@@ -26,6 +26,13 @@ og_image: /favicon.svg
 markdown: kramdown
 theme: minima
 
+# Navigation order
+minima:
+  nav_pages:
+    - index.md
+    - schema.md
+    - examples.md
+
 # Plugins
 plugins:
   - jekyll-seo-tag
