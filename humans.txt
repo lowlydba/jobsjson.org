@@ -8,6 +8,6 @@
     Standards: HTML5, CSS3
     Components: Jekyll, GitHub Pages
     Software: Jekyll, Markdown
-    
+
 /* THANKS */
     To the open source community
