@@ -112,7 +112,7 @@ bundle exec jekyll serve  # For local development
 4. **Consistent Formatting**: Follow existing patterns in markdown and code
 5. **Validation**: Ensure all JSON examples are valid and match the schema
 6. **Accessibility**: Use semantic HTML/markdown structure
-7. **Performance**: Keep the site lightweight and fast
+7. **Performance**: Keep the site lightweight and fast - optimize images, minimize external dependencies, keep markdown files under 500KB
 
 ## jobs.json Specification Principles
 

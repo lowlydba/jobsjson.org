@@ -122,7 +122,7 @@ Each job object represents a single open position.
 | `location` | object | OPTIONAL | Single location (see §4.4) |
 | `locations` | array | OPTIONAL | Multiple locations (see §4.4) |
 | `employmentType` | string | OPTIONAL | Primary employment type (see §5.2) |
-| `otherEmploymentTypes` | array | OPTIONAL | Additional employment types |
+| `otherEmploymentTypes` | array | OPTIONAL | Additional employment types when position can be filled under multiple arrangements (e.g., both FULL_TIME and CONTRACT) |
 | `postedDate` | string | OPTIONAL | ISO 8601 date when job was posted |
 | `expiresDate` | string | OPTIONAL | ISO 8601 date when posting expires |
 | `compensation` | object | OPTIONAL | Compensation information (see §4.5) |
@@ -193,15 +193,15 @@ Provides salary or compensation information for a job.
 |-------|------|----------|-------------|
 | `currency` | string | **REQUIRED** | ISO 4217 currency code |
 | `period` | string | **REQUIRED** | Payment period (see §5.3) |
-| `min` | number | OPTIONAL | Minimum compensation amount |
-| `max` | number | OPTIONAL | Maximum compensation amount |
+| `min` | number | OPTIONAL | Minimum compensation amount (as decimal number in major currency units) |
+| `max` | number | OPTIONAL | Maximum compensation amount (as decimal number in major currency units) |
 
 **Constraints:**
 - `currency` MUST be a valid ISO 4217 three-letter currency code (e.g., USD, EUR, GBP)
 - `period` MUST be one of: `YEARLY`, `MONTHLY`, `WEEKLY`, `DAILY`, `HOURLY`
 - At least one of `min` or `max` SHOULD be provided
 - If both `min` and `max` are provided, `max` MUST be greater than or equal to `min`
-- Amounts MUST be positive numbers
+- Amounts MUST be positive numbers expressed in major currency units (e.g., dollars, not cents; euros, not euro cents)
 
 **Example:**
 ```json
