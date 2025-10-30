@@ -12,9 +12,14 @@ A specification for a standardized `jobs.json` file to describe open positions a
 
 The `jobs.json` specification defines a well-known file format, similar to `robots.txt` or [`humans.txt`](https://humanstxt.org/), that organizations can use to publish their open job positions in a machine-readable format. By placing a `jobs.json` file at the root of your domain, you make it easy for job aggregators, career tools, and automated systems to discover and parse your available positions.
 
+Job postings are scattered across various platforms, formats, and systems. Organizations maintain careers pages with inconsistent structures and vendors, making it difficult for job seekers to programmatically search across companies, aggregators to reliably collect listings, and tools to provide unified search experiences.
+
+A standardized, [well-known file format][well-known] placed at a predictable location enables automatic discovery, consistent structure across organizations, simple implementation, no proprietary platform lock-in, and flexibility to list individual jobs or simply link to your careers page.
+
 <div style="padding: 1em; background-color: #d1ecf1; border-left: 4px solid #0c5460; color: #0c5460; margin: 1em 0;">
   <strong>📝 Note:</strong> This is a prototype specification and may change based on community feedback and real-world implementation experience. We encourage early adopters to try it out and share their feedback.
 </div>
+
 
 - [Tutorial](#tutorial)
   - [Getting Started with jobs.json](#getting-started-with-jobsjson)
@@ -23,9 +28,7 @@ The `jobs.json` specification defines a well-known file format, similar to `robo
   - [Common Patterns](#common-patterns)
 - [Reference](#reference)
 - [Explanation](#explanation)
-  - [Why jobs.json?](#why-jobsjson)
   - [Design Principles](#design-principles)
-  - [Documentation Style Guidelines](#documentation-style-guidelines)
   - [Use Cases](#use-cases)
   - [Relationship to Other Standards](#relationship-to-other-standards)
   - [Future Considerations](#future-considerations)
@@ -109,6 +112,7 @@ If maintaining a complete list of individual jobs in your `jobs.json` file is to
   "jobs": []
 }
 ```
+
 </details>
 
 You can also use both approaches together - list some key positions individually while also providing a `jobs_url` for the complete listing:
@@ -212,29 +216,16 @@ Add expiration dates to job listings:
 
 </details>
 
----
-
 ## Reference
 
 For complete schema documentation including all field definitions, data types, and examples, see the [Schema Reference](schema.md) page.
 
----
-
 ## Explanation
-
-### Why jobs.json?
-
-The problem: Job postings are scattered across various platforms, formats, and systems. Organizations maintain careers pages with inconsistent structures, making it difficult for job seekers to programmatically search across companies, aggregators to reliably collect listings, and tools to provide unified search experiences.
-
-The solution: A standardized, [well-known file format][well-known] placed at a predictable location enables automatic discovery, consistent structure across organizations, simple implementation, no proprietary platform lock-in, and flexibility to list individual jobs or simply link to your careers page.
 
 ### Design Principles
 
 The specification prioritizes simplicity for quick implementation, machine-readable structured data, human-readable JSON format, extensibility through optional fields, and follows the well-known file location pattern of `robots.txt` and `humans.txt`.
 
-### Documentation Style Guidelines
-
-When creating or editing documentation for the jobs.json specification, use semantic markup rather than manual formatting, avoid manual bold formatting in favor of proper heading structures, use code blocks for technical examples, rely on heading hierarchy for structure, and let the Jekyll theme handle styling automatically.
 
 ### Use Cases
 
