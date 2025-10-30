@@ -20,3 +20,4 @@ exclude:
   - vendor/
   - .bundle/
   - README.md
+  - SPECIFICATION.md
