@@ -212,7 +212,7 @@ The `jobs.json` file must be a valid JSON document conforming to the following s
 | `url` | string | Yes | Company website URL |
 | `logo` | string | No | URL to company logo |
 | `description` | string | No | Brief company description |
-| `jobs_url` | string | No | URL to company's jobs page or careers site. Can be used as an alternative to listing individual jobs in the `jobs` array |
+| `jobs_url` | string | No | URL to company's jobs page or careers site. Can be used instead of or alongside individual jobs listed in the `jobs` array |
 
 #### Job Object
 
