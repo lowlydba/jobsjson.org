@@ -122,12 +122,12 @@ The `jobs.json` file must be a valid JSON document conforming to the following s
 }
 ```
 
----
-
 ## Getting Help
 
-Report specification issues or ask questions on the [GitHub Repository](https://github.com/lowlydba/jobsjson.org).
+Report specification issues or ask questions on the [GitHub Repository][gh].
 
 ## Contributing
 
-This specification is open source and welcomes community input. Visit the GitHub repository to propose changes or improvements.
+This specification is open source and welcomes community input. Visit the [GitHub repository][gh] to propose changes or improvements.
+
+[gh]: https://github.com/lowlydba/jobsjson.org

@@ -123,6 +123,6 @@ Report specification issues or ask questions on the [GitHub Repository](https://
 
 ## Contributing
 
-This specification is open source and welcomes community input. Visit the GitHub repository to propose changes or improvements.
+This specification is open source and welcomes community input! Visit the [GitHub repository](https://github.com/lowlydba/jobsjson.org) to propose changes or improvements.
 
 [well-known]: https://tools.ietf.org/html/rfc5785

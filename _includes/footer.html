@@ -6,25 +6,22 @@
   <div class="wrapper">
 
     <div class="footer-col-wrapper">
-      <div class="footer-col">
-      {%- if site.author %}
-        <ul class="contact-list">
-          {% if site.author.name -%}
-            <li class="p-name">{{ site.author.name | escape }}</li>
-          {% endif -%}
-          {% if site.author.email -%}
-            <li><a class="u-email" href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></li>
-          {%- endif %}
-        </ul>
-      {%- endif %}
-      </div>
-      <div class="footer-col">
+      <div class="footer-col footer-col-1">
         <p>{{ site.description | escape }}</p>
       </div>
-    </div>
 
-    <div class="social-links">
-      {%- include social.html -%}
+      <div class="footer-col footer-col-2">
+        <p>
+          {% if site.spec_version %}Spec version: <strong>{{ site.spec_version }}</strong><br>{% endif %}
+          Last built: <time datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date: "%Y-%m-%d" }}</time><br>
+          License: <a href="/LICENSE">{{ site.license | default: 'MIT' }}</a>
+        </p>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <div class="social-links">{%- include social.html -%}</div>
+      </div>
+
     </div>
 
   </div>

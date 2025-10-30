@@ -33,6 +33,10 @@ minima:
     - schema.md
     - examples.md
 
+# Spec metadata
+spec_version: "0.1"
+license: "MIT"
+
 # Plugins
 plugins:
   - jekyll-seo-tag
