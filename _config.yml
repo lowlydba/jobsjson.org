@@ -1,0 +1,17 @@
+# Site settings
+title: "jobsjson.org"
+description: "A specification for a standardized jobs.json file to describe open positions"
+url: "https://jobsjson.org"
+baseurl: ""
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .bundle/
+  - README.md
