@@ -3,8 +3,6 @@ layout: default
 title: Schema Reference
 ---
 
-> **Prototype Status**: This is a prototype specification (version 0.1) and may change based on community feedback and real-world implementation experience.
-
 The `jobs.json` file must be a valid JSON document conforming to the following schema:
 
 ## Root Object

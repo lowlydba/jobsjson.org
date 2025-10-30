@@ -11,8 +11,9 @@ theme: minima
 # Kramdown settings for GitHub Flavored Markdown
 kramdown:
   input: GFM
-  hard_wrap: false
+  hard_wrap: true
   syntax_highlighter: rouge
+  parse_block_html: true
 
 # Include static files
 include:
