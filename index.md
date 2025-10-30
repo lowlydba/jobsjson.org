@@ -109,9 +109,7 @@ For complete schema documentation including all field definitions, data types, a
 
 ### Relationship to Other Standards
 
-Similar to `robots.txt`, `humans.txt`, `security.txt`, and `ads.txt` as a well-known file pattern.
-
-Works as a lighter alternative to Schema.org's [JobPosting](https://schema.org/JobPosting) markup for HTML structured data.
+Similar to `robots.txt`, `humans.txt`, `security.txt`, and `ads.txt` as a well-known file pattern. Works as a lighter alternative to Schema.org's [JobPosting](https://schema.org/JobPosting) markup for HTML structured data.
 
 ### Future Considerations
 
