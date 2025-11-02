@@ -1,4 +1,3 @@
----
 layout: default
 title: "Home"
 description: "A standardized format for organizations to publish open job positions in a human & machine-readable jobs.json file. Tutorial, examples, and complete reference documentation."
@@ -6,26 +5,31 @@ keywords: "jobs.json, job postings, careers api, job specification, human-readab
 og_image: /favicon.svg
 ---
 
-A specification for a standardized `jobs.json` file to describe open positions at an organization.
+Publish open roles in a simple, standardized `jobs.json` file that tools can discover and parse.
 
 ## Overview<!-- omit in toc -->
 
-The `jobs.json` specification defines a well-known file format, similar to `robots.txt` or [`humans.txt`](https://humanstxt.org/), that organizations can use to publish their open job positions in a machine-readable format. By placing a `jobs.json` file at the root of your domain, you make it easy for job aggregators, career tools, and automated systems to discover and parse your available positions.
+The `jobs.json` spec uses a well-known file pattern (like `robots.txt` or [`humans.txt`](https://humanstxt.org/)). Put a `jobs.json` at your domain root and make it easy for aggregators, career tools, and scripts to find your roles without scraping.
 
-Job postings are scattered across various platforms, formats, and systems. Organizations maintain careers pages with inconsistent structures and vendors, making it difficult for job seekers to programmatically search across companies, aggregators to reliably collect listings, and tools to provide unified search experiences.
+Today, jobs live across ATS vendors and custom pages with inconsistent HTML. That makes it hard for seekers to search across companies and for builders to index reliably. A small, predictable JSON file at a known URL gives:
 
-A standardized, [well-known file format][well-known] placed at a predictable location enables automatic discovery, consistent structure across organizations, simple implementation, no proprietary platform lock-in, and flexibility to list individual jobs or simply link to your careers page.
+- Automatic discovery at a standard location
+- A consistent, minimal structure across organizations
+- A no-vendor-lock-in option you control
+- Flexibility: list individual jobs or just link to your careers page
 
 <div style="padding: 1em; background-color: #d1ecf1; border-left: 4px solid #0c5460; color: #0c5460; margin: 1em 0;">
-  <strong>📝 Note:</strong> This is a prototype specification and may change based on community feedback and real-world implementation experience. We encourage early adopters to try it out and share their feedback.
+  <strong>📝 Note:</strong> This is a prototype and, realistically, may remain a niche/experimental standard. It’s still useful as a practical thought experiment: simple to try, easy to abandon, and informative even if adoption stays small. We welcome feedback and real-world trials.
 </div>
 
+- [og\_image: /favicon.svg](#og_image-faviconsvg)
 - [Tutorial](#tutorial)
   - [Getting Started with jobs.json](#getting-started-with-jobsjson)
 - [How-To Guides](#how-to-guides)
   - [Using jobsUrl for Quick Implementation](#using-jobsurl-for-quick-implementation)
 - [Reference](#reference)
 - [Explanation](#explanation)
+  - [Philosophy](#philosophy)
   - [Use Cases](#use-cases)
   - [Relationship to Other Standards](#relationship-to-other-standards)
   - [Future Considerations](#future-considerations)
@@ -95,9 +99,26 @@ For more detailed examples and common patterns, see the [Examples page](examples
 
 ## Reference
 
-For complete schema documentation including all field definitions, data types, and examples, see the [Schema Reference](schema.md) page.
+For complete schema documentation including all field definitions, data types, and examples, see the [Schema Reference](schema.html) page.
 
 ## Explanation
+
+### Philosophy
+
+This project optimizes for small, boring, and useful.
+
+- Simplicity first: A tiny, flat JSON shape most orgs can publish in minutes.
+- Well-known location: A predictable URL enables zero-configuration discovery.
+- Source of truth: Let your domain speak for itself, independent of vendors or scrapers.
+- Pragmatic adoption: If maintaining individual listings is heavy, just set `company.jobsUrl` and you’re still compliant.
+- Extensible, not fragile: Add `x-` fields for custom needs without breaking parsers.
+
+What this is not:
+
+- Not an ATS replacement
+- Not a competitor to Schema.org markup
+- Not trying to capture every job nuance
+
 
 ### Use Cases
 
@@ -122,5 +143,3 @@ Report specification issues or ask questions on the [GitHub Repository](https://
 ## Contributing
 
 This specification is open source and welcomes community input! Visit the [GitHub repository](https://github.com/lowlydba/jobsjson.org) to propose changes or improvements.
-
-[well-known]: https://tools.ietf.org/html/rfc5785
