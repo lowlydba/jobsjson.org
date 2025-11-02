@@ -1,3 +1,4 @@
+---
 layout: default
 title: "Home"
 description: "A standardized format for organizations to publish open job positions in a human & machine-readable jobs.json file. Tutorial, examples, and complete reference documentation."
@@ -18,11 +19,10 @@ Today, jobs live across ATS vendors and custom pages with inconsistent HTML. Tha
 - A no-vendor-lock-in option you control
 - Flexibility: list individual jobs or just link to your careers page
 
-<div style="padding: 1em; background-color: #d1ecf1; border-left: 4px solid #0c5460; color: #0c5460; margin: 1em 0;">
-  <strong>📝 Note:</strong> This is a prototype and, realistically, may remain a niche/experimental standard. It’s still useful as a practical thought experiment: simple to try, easy to abandon, and informative even if adoption stays small. We welcome feedback and real-world trials.
-</div>
+> Note
+>
+> This is a prototype and, realistically, may remain a niche/experimental standard. It’s still useful as a practical thought experiment: simple to try, easy to abandon, and informative even if adoption stays small. We welcome feedback and real-world trials.
 
-- [og\_image: /favicon.svg](#og_image-faviconsvg)
 - [Tutorial](#tutorial)
   - [Getting Started with jobs.json](#getting-started-with-jobsjson)
 - [How-To Guides](#how-to-guides)
@@ -137,7 +137,7 @@ The specification is designed to evolve while maintaining backward compatibility
 
 ## Getting Help
 
-Report specification issues or ask questions on the [GitHub Repository](https://github.com/lowlydba/jobsjson.org). For detailed schema documentation and examples, see the [Schema Reference](schema.md) page.
+Report specification issues or ask questions on the [GitHub Repository](https://github.com/lowlydba/jobsjson.org). For detailed schema documentation and examples, see the [Schema Reference](schema.html) page.
 
 ## Contributing
 

@@ -37,7 +37,7 @@ The `jobs.json` file must be a valid JSON document conforming to the following s
 | `url` | string | Yes | URL to full job posting |
 | `location` | object | No | Single location object |
 | `locations` | array | No | Array of location objects (use if multiple locations) |
-| `employmentType` | string | No | Employment type. One of: `FULL_TIME`, `PART_TIME`, `CONTRACT`, `TEMPORARY`, `INTERN` |
+| `employmentType` | string | No | Employment type. One of: `FULL_TIME`, `PART_TIME`, `CONTRACT`, `TEMPORARY`, `INTERN`, `VOLUNTEER`, `PER_DIEM`, `OTHER` |
 | `postedDate` | string | No | ISO 8601 date when job was posted |
 | `expiresDate` | string | No | ISO 8601 date when posting expires |
 | `compensation` | object | No | Compensation information object |
