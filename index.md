@@ -53,7 +53,8 @@ This tutorial will guide you through creating your first `jobs.json` file and pu
      "version": "0.1",
      "company": {
        "name": "Your Company Name",
-       "url": "https://yourcompany.com"
+       "url": "https://yourcompany.com",
+       "jobsUrl": "https://yourcompany.com/careers"
     },
      "jobs": []
    }
@@ -66,7 +67,8 @@ This tutorial will guide you through creating your first `jobs.json` file and pu
      "version": "0.1",
      "company": {
        "name": "Your Company Name",
-       "url": "https://yourcompany.com"
+       "url": "https://yourcompany.com",
+       "jobsUrl": "https://yourcompany.com/careers"
      },
      "jobs": [
        {

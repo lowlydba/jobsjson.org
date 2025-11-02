@@ -1,7 +1,7 @@
 # jobs.json Technical Specification
 
-**Version**: 1.0  
-**Last Updated**: 2025-01-20  
+**Version**: 1.0
+**Last Updated**: 2025-01-20
 **Status**: Stable
 
 ## Abstract
@@ -108,7 +108,8 @@ The company object provides information about the hiring organization.
   "name": "Example Corporation",
   "url": "https://example.com",
   "logo": "https://example.com/logo.png",
-  "description": "A leading technology company specializing in innovative solutions"
+  "description": "A leading technology company specializing in innovative solutions",
+  "jobsUrl": "https://example.com/careers"
 }
 ```
 
@@ -327,7 +328,8 @@ Organizations MAY add custom fields using the `x-` prefix:
   "version": "1.0",
   "company": {
     "name": "Example Corp",
-    "url": "https://example.com"
+    "url": "https://example.com",
+    "jobsUrl": "https://example.com/careers"
   },
   "jobs": []
 }
@@ -340,7 +342,8 @@ Organizations MAY add custom fields using the `x-` prefix:
   "version": "1.0",
   "company": {
     "name": "Example Corp",
-    "url": "https://example.com"
+    "url": "https://example.com",
+    "jobsUrl": "https://example.com/careers"
   },
   "jobs": [
     {
@@ -368,7 +371,8 @@ Organizations MAY add custom fields using the `x-` prefix:
     "name": "Example Corporation",
     "url": "https://example.com",
     "logo": "https://example.com/logo.png",
-    "description": "A leading technology company"
+    "description": "A leading technology company",
+    "jobsUrl": "https://example.com/careers"
   },
   "jobs": [
     {
@@ -468,6 +472,6 @@ Suggestions and improvements are welcome via GitHub issues and pull requests.
 
 ---
 
-**Specification Maintainer**: lowlydba  
-**Website**: https://jobsjson.org  
+**Specification Maintainer**: lowlydba
+**Website**: https://jobsjson.org
 **Repository**: https://github.com/lowlydba/jobsjson.org
