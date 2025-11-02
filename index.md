@@ -119,7 +119,6 @@ What this is not:
 - Not a competitor to Schema.org markup
 - Not trying to capture every job nuance
 
-
 ### Use Cases
 
 - For Organizations: Increase job posting visibility across the web, maintain a single source of truth for open positions, enable integration with multiple job boards automatically, and provide transparent structured data. Start simple with just a `jobsUrl` link and expand to individual listings later if desired.

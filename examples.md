@@ -5,7 +5,7 @@ description: "Practical examples and common patterns for implementing the jobs.j
 keywords: "jobs.json examples, job posting examples, careers api examples, json examples"
 ---
 
-This page provides practical examples and common patterns for implementing the jobs.json specification.
+Practical examples and common patterns for implementing the jobs.json specification.
 
 - [Basic Approach](#basic-approach)
 - [Hybrid Approach](#hybrid-approach)

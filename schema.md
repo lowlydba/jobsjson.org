@@ -59,7 +59,7 @@ The `jobs.json` file must be a valid JSON document conforming to the following s
 | `currency` | string | Yes | ISO 4217 currency code (e.g., USD, EUR) |
 | `min` | number | No | Minimum compensation |
 | `max` | number | No | Maximum compensation |
-| `period` | string | Yes | Payment period (YEARLY, MONTHLY, HOURLY) |
+| `period` | string | Yes | Payment period (YEARLY, MONTHLY, WEEKLY, DAILY, HOURLY) |
 
 ## Complete Example
 
