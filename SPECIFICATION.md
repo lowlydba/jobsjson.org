@@ -30,6 +30,10 @@ The `jobs.json` specification provides a standardized way for organizations to p
 - Maintain simplicity and ease of implementation
 - Allow extensibility for future enhancements
 
+### Non‑Normative Note: Adoption & Scope
+
+This specification is intentionally small and pragmatic. It may remain niche and is useful even as a thought experiment. The goals are to reduce scraping, provide a predictable source of truth at a well‑known URL, and keep implementation effort minimal. It is not an ATS, nor a replacement for Schema.org markup. Organizations can start by publishing only `company.jobsUrl` and expand as needed.
+
 ## 2. Conformance
 
 The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to be interpreted as described in RFC 2119.
