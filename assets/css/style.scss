@@ -1,0 +1,30 @@
+---
+---
+
+@import "minima";
+
+/* Fix mobile header layout - prevent menu from overlapping title */
+.site-header {
+  .wrapper {
+    @media screen and (max-width: 600px) {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  .site-title {
+    @media screen and (max-width: 600px) {
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  }
+
+  .site-nav {
+    @media screen and (max-width: 600px) {
+      position: static;
+      float: none;
+      width: 100%;
+    }
+  }
+}
