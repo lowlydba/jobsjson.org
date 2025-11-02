@@ -1,5 +1,8 @@
 # jobsjson.org
 
+<img width="772" height="402" alt="Screenshot 2025-10-30 154619" src="https://github.com/user-attachments/assets/90b4b009-1b01-4bc8-9dc4-1418776e4516" />
+
+
 The public website and reference documentation for jobs.json — a small, well-known
 JSON file that organizations can publish at their domain root to expose open roles
 in a machine-readable way. It’s intentionally simple, vendor‑neutral, and pragmatic.
