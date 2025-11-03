@@ -29,7 +29,6 @@ theme: minima
 # Navigation order
 minima:
   nav_pages:
-    - index.md
     - schema.md
     - examples.md
 
